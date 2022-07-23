@@ -1,7 +1,7 @@
 {
   "name": "dtmoney",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1",
+  "private": false,
   "dependencies": {
     "axios": "^0.24.0",
     "miragejs": "^0.1.43",
@@ -23,13 +23,18 @@
     "@types/react-dom": "^17.0.9",
     "@types/react-modal": "^3.13.1",
     "@types/styled-components": "^5.1.18",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "eslint": "^8.20.0",
+    "eslint-plugin-react": "^7.30.1",
     "typescript": "^4.4.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "fix-all": "node_modules/.bin/eslint --fix ."
   },
   "eslintConfig": {
     "extends": [
@@ -48,5 +53,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "sistema de controle financeiro",
+  "main": "index.js",
+  "repository": "https://github.com/evelynhelena/dtmoney.git",
+  "author": "evelyn helena",
+  "license": "MIT"
 }
